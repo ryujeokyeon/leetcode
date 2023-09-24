@@ -16,9 +16,7 @@ public:
             if(n <= z || n >= nums.size() || z >= nums.size())
             return;
 
-            int temp = nums[z];
-            nums[z] = nums[n];
-            nums[n] = temp;
+            iter_swap(nums.begin() + z, nums.begin() + n);
         }
     }
 };
